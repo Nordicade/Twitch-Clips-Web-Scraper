@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+
 import Clip from './Clip';
 import Constants from './Constants';
 
@@ -24,7 +25,7 @@ function searchRegex(regex : RegExp, searchString: string) {
 // This method is sure to change in the future.
 // Parameters: siteURL: String for the website URL. Implicitly expects a streamcharts clips.
 // Output: Returns an array of 20 clip objects
-async function retrieveClipsFromPage(siteUrl : string) {
+function retrieveClipsFromPage(siteUrl : string) : Clip[] {
   (async () => {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
@@ -41,38 +42,41 @@ async function retrieveClipsFromPage(siteUrl : string) {
       const element_property = await button.getProperty('outerHTML');
       const outerHTML = await element_property.jsonValue();
 
+      let clipURL = ''
+      let clipTitle = ''
+
       // Extract clip url
-      let clipURL = searchRegex(Constants.DOWNLOAD_LINK_REGEX, outerHTML);
-      if (!clipURL) {
+      let matchedClipURL = searchRegex(Constants.DOWNLOAD_LINK_REGEX, outerHTML);
+      if (!matchedClipURL) {
         throw new Error("Error - The clip url regex failed to extract");
       }
       else {
-        clipURL = clipURL[2];
+        clipURL = matchedClipURL[2];
       }
 
       // Extract clip title
-      let clipTitle = searchRegex(Constants.TITLE_REGEX, outerHTML);
-      if (!clipTitle) {
+      let matchedClipTitle = searchRegex(Constants.TITLE_REGEX, outerHTML);
+      if (!matchedClipTitle) {
         throw new Error("Error - The title url regex failed to extract");
       }
       else {
-        clipTitle = clipTitle[2];
+        clipTitle = matchedClipTitle[2];
       }
 
       // Store the results 
       const currClip = new Clip(clipURL, clipTitle);
       clips.push(currClip);
     }
-    return clips
     await browser.close();
   })();
-
+  return clips;
 };
 
 // This method is sure to change in the future.
 // Parameters: siteURL: String for the website URL. Implicitly expects a streamcharts clips.
 // Output: Returns an array of 20 clip objects
 async function downloadClips(clips : Clip[]) {
+  throw new Error("Method not implemented yet.");
   (async () => {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
@@ -87,6 +91,6 @@ async function downloadClips(clips : Clip[]) {
 console.log("- - Starting TwitchClips.ts - -");
 
 // TODO : Look into promises and how to store the result of await into variable 
-const clips = await retrieveClipsFromPage(Constants.STREAMS_CHARTS_URL);
-await downloadClips(clips);
+const clips = retrieveClipsFromPage(Constants.STREAMS_CHARTS_URL);
+downloadClips(clips);
 console.log("- - Finishing TwitchClips.ts - -");
