@@ -14,61 +14,68 @@ class Clip {
     }
 }
 
-// This method handles running a regex and error handling.
-// Parameters: regex : 
-function searchRegex(regex, searchString) {
-  let m;
-  while ((m = regex.exec(searchString)) !== null) {
-    if (m.index === regex.lastIndex) {
-        regex.lastIndex++;
-    }
-    // The result can be accessed through the `m`-variable.
-    m.forEach((match, groupIndex) => {
-        console.log(`Found match, group ${groupIndex}: ${match}`);
-    });
-    return m;
-  }
+function printClipArray(clips) {
+  let i = 1;
+  clips.forEach(clip => {
+    console.log(i++);
+    console.log(clip.URL);
+    console.log(clip.URL);
+  })
 }
 
 // This method is sure to change in the future.
 // Parameters: siteURL: String for the website URL. Implicitly expects a streamcharts clips.
 // Output: Returns an array of 20 clip objects
-function retrieveClipsFromPage(siteUrl) {
-  (async () => {
-    const browser = await puppeteer.launch();
+async function retrieveClipsFromPage(siteUrl) {
+  let clips = new Array(20);
+  try{
+    const browser = await puppeteer.launch( {headless : false });
     const page = await browser.newPage();
-    const clips = new Array<Clip>(20);
     await page.goto(siteUrl);
 
     // BEHOLD 
     // $x("//button[contains(x-show, *)]")
     // $x("//button[contains(@class, 'clip-container')]")
+
+    // TODO: 
+    // DEBUG WHY THIS REGEX IS ONLY WORKING FOR THE FIRST MATCH
+    // IS IT REALLY JUST A REGEX MATCHING FAILURE
+    // OR DOES IT HAVE TO DO WITH SOME TRICKY AWAIT/ASYNC BUT THAT I DON'T UNDERSTAND?
       
-    const buttons = await page.$x("//button[contains(@class, 'clip-container')]");
-    for (let button of buttons) {
+    let buttons = await page.$x("//button[contains(@class, 'clip-container')]");
+    console.log(buttons.length);
+    // for (let button of buttons) {
+    for (let i = 0; i < buttons.length; i++) {
       // Retrieve the information for each video from the top clips page
-      const element_property = await button.getProperty('outerHTML');
+      const element_property = await buttons[i].getProperty('outerHTML');
       const outerHTML = await element_property.jsonValue();
 
       let clipURL = ''
       let clipTitle = ''
 
       // Extract clip url
-      let matchedClipURL = searchRegex(Constants.DOWNLOAD_LINK_REGEX, outerHTML);
+      console.log(`--- If this is ever not a bunch of text, freak out: ${outerHTML} ---`);
+      let matchedClipURL = Constants.DOWNLOAD_LINK_REGEX.exec(outerHTML);
+      console.log(`matchedClipURL : ${matchedClipURL}`)
       if (!matchedClipURL) {
+        console.log(`Failed clipURL OuterHTML : ${outerHTML}`)
         throw new Error("Error - The clip url regex failed to extract");
       }
       else {
         clipURL = matchedClipURL[2];
+        console.log(`Successfully stored ${clipURL}`)
       }
 
       // Extract clip title
-      let matchedClipTitle = searchRegex(Constants.TITLE_REGEX, outerHTML);
+      let matchedClipTitle = Constants.TITLE_REGEX.exec(outerHTML);
+      console.log(`matchedClipTitle : ${matchedClipTitle}`)
       if (!matchedClipTitle) {
+        console.log(`Failed clipTitle OuterHTML : ${outerHTML}`)
         throw new Error("Error - The title url regex failed to extract");
       }
       else {
         clipTitle = matchedClipTitle[2];
+        console.log(`Successfully stored ${clipTitle}`)
       }
 
       // Store the results 
@@ -76,7 +83,12 @@ function retrieveClipsFromPage(siteUrl) {
       clips.push(currClip);
     }
     await browser.close();
-  })();
+  }
+  catch (exception) {
+    console.log("Encountered an error");
+    console.log(exception)
+  }
+  printClipArray(clips);
   return clips;
 };
 
@@ -96,9 +108,11 @@ async function downloadClips(clips) {
 };
 
 // Code execution starts here
+(async() => {
 console.log("- - Starting TwitchClips.ts - -");
 
 // TODO : Look into promises and how to store the result of await into variable 
-const clips = retrieveClipsFromPage(Constants.STREAMS_CHARTS_URL);
-downloadClips(clips);
+const clips = await retrieveClipsFromPage(Constants.STREAMS_CHARTS_URL);
+// downloadClips(clips);
 console.log("- - Finishing TwitchClips.ts - -");
+})();
