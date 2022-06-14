@@ -4,5 +4,5 @@ const Constants = {
     STREAMS_CHARTS_URL: 'https://streamscharts.com/clips',
     DOWNLOAD_CLIP_URL: 'https://streamscharts.com/clips/downloader',
   }
-
-export default Constants
+  
+  export {Constants};

@@ -1,14 +1,22 @@
 const puppeteer = require('puppeteer');
 
-import Clip from './Clip';
-import Constants from './Constants';
+const Constants = {
+  DOWNLOAD_LINK_REGEX: /(https:\/\/clips\.twitch\.tv\/embed\?clip=)(.*?)(')/gm,
+  TITLE_REGEX: /(alt=")(.*?)(")/gm,
+  STREAMS_CHARTS_URL: 'https://streamscharts.com/clips',
+  DOWNLOAD_CLIP_URL: 'https://streamscharts.com/clips/downloader',
+}
 
-// D:\Nicholas\Projects\WebScraper>
-// node TwitchClips.jsx
+class Clip {
+  constructor(_URL, _Title) {
+      this.URL = _URL;
+      this.Title = _Title;
+    }
+}
 
 // This method handles running a regex and error handling.
 // Parameters: regex : 
-function searchRegex(regex : RegExp, searchString: string) {
+function searchRegex(regex, searchString) {
   let m;
   while ((m = regex.exec(searchString)) !== null) {
     if (m.index === regex.lastIndex) {
@@ -25,11 +33,11 @@ function searchRegex(regex : RegExp, searchString: string) {
 // This method is sure to change in the future.
 // Parameters: siteURL: String for the website URL. Implicitly expects a streamcharts clips.
 // Output: Returns an array of 20 clip objects
-function retrieveClipsFromPage(siteUrl : string) : Clip[] {
+function retrieveClipsFromPage(siteUrl) {
   (async () => {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
-    const clips = Clip[20];
+    const clips = new Array<Clip>(20);
     await page.goto(siteUrl);
 
     // BEHOLD 
@@ -75,16 +83,16 @@ function retrieveClipsFromPage(siteUrl : string) : Clip[] {
 // This method is sure to change in the future.
 // Parameters: siteURL: String for the website URL. Implicitly expects a streamcharts clips.
 // Output: Returns an array of 20 clip objects
-async function downloadClips(clips : Clip[]) {
+async function downloadClips(clips) {
   throw new Error("Method not implemented yet.");
-  (async () => {
-    const browser = await puppeteer.launch();
-    const page = await browser.newPage();
-    const clips = Clip[20];
-    await page.goto(Constants.DOWNLOAD_CLIP_URL);
-    console.log("Method not implemented yet");
-    await browser.close();
-  })();
+  // (async () => {
+  //   const browser = await puppeteer.launch();
+  //   const page = await browser.newPage();
+  //   const clips = Clip[20];
+  //   await page.goto(Constants.DOWNLOAD_CLIP_URL);
+  //   console.log("Method not implemented yet");
+  //   await browser.close();
+  // })();
 };
 
 // Code execution starts here
