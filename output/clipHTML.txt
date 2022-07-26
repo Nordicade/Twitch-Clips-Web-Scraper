@@ -1,4 +1,4 @@
-0 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12" :class="{ 'xs-max:hidden': showMore &amp;&amp; 0 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=EndearingTameRatPeteZaroll-bAOHVceHk3TM3I96', 'EndearingTameRatPeteZaroll-bAOHVceHk3TM3I96'); window.history.pushState('', '', clipHistoryQuery('add', 'EndearingTameRatPeteZaroll-bAOHVceHk3TM3I96'))" wire:key="'0'+'1658821481'">
+0 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12" :class="{ 'xs-max:hidden': showMore &amp;&amp; 0 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=EndearingTameRatPeteZaroll-bAOHVceHk3TM3I96', 'EndearingTameRatPeteZaroll-bAOHVceHk3TM3I96'); window.history.pushState('', '', clipHistoryQuery('add', 'EndearingTameRatPeteZaroll-bAOHVceHk3TM3I96'))" wire:key="'0'+'1658823416'">
 <img class="crossorigin-img rounded-lg relative transform transition duration-500 clip-image w-full h-full object-cover" width="216" height="122.41" alt="Top G(roomer)" src="https://clips-media-assets2.twitch.tv/Bhmh0GwDh1XHh5N0zNyPeg/AT-cm%7CBhmh0GwDh1XHh5N0zNyPeg-preview-480x272.jpg" loading="lazy" decoding="async">
 <div class="absolute w-full h-full left-0 top-0 clips-gradient"></div>
 <div class="absolute bottom-14 left-2 flex items-center">
@@ -27,7 +27,7 @@ xQc
 </div>
 </div>
 </div>
-</button> BREAK1 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12" :class="{ 'xs-max:hidden': showMore &amp;&amp; 1 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=FuriousArtisticWebKappaClaus-3SK5u4xGMy3Ngzs8', 'FuriousArtisticWebKappaClaus-3SK5u4xGMy3Ngzs8'); window.history.pushState('', '', clipHistoryQuery('add', 'FuriousArtisticWebKappaClaus-3SK5u4xGMy3Ngzs8'))" wire:key="'1'+'1658821481'">
+</button> BREAK1 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12" :class="{ 'xs-max:hidden': showMore &amp;&amp; 1 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=FuriousArtisticWebKappaClaus-3SK5u4xGMy3Ngzs8', 'FuriousArtisticWebKappaClaus-3SK5u4xGMy3Ngzs8'); window.history.pushState('', '', clipHistoryQuery('add', 'FuriousArtisticWebKappaClaus-3SK5u4xGMy3Ngzs8'))" wire:key="'1'+'1658823416'">
 <img class="crossorigin-img rounded-lg relative transform transition duration-500 clip-image w-full h-full object-cover" width="216" height="122.41" alt="Andrew Tate has been to space thats how he knows the earth is a sphere" src="https://clips-media-assets2.twitch.tv/QM1Dp90iubuMRjMtzYM7PA/AT-cm%7CQM1Dp90iubuMRjMtzYM7PA-preview-480x272.jpg" loading="lazy" decoding="async">
 <div class="absolute w-full h-full left-0 top-0 clips-gradient"></div>
 <div class="absolute bottom-14 left-2 flex items-center">
@@ -56,7 +56,7 @@ HasanAbi
 </div>
 </div>
 </div>
-</button> BREAK2 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12" :class="{ 'xs-max:hidden': showMore &amp;&amp; 2 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=CovertImpossibleCaterpillarPermaSmug-QVxgEOfxXjeNjvpW', 'CovertImpossibleCaterpillarPermaSmug-QVxgEOfxXjeNjvpW'); window.history.pushState('', '', clipHistoryQuery('add', 'CovertImpossibleCaterpillarPermaSmug-QVxgEOfxXjeNjvpW'))" wire:key="'2'+'1658821481'">
+</button> BREAK2 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12" :class="{ 'xs-max:hidden': showMore &amp;&amp; 2 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=CovertImpossibleCaterpillarPermaSmug-QVxgEOfxXjeNjvpW', 'CovertImpossibleCaterpillarPermaSmug-QVxgEOfxXjeNjvpW'); window.history.pushState('', '', clipHistoryQuery('add', 'CovertImpossibleCaterpillarPermaSmug-QVxgEOfxXjeNjvpW'))" wire:key="'2'+'1658823416'">
 <img class="crossorigin-img rounded-lg relative transform transition duration-500 clip-image w-full h-full object-cover" width="216" height="122.41" alt="Heat wave in EU" src="https://clips-media-assets2.twitch.tv/ZCAxVEFcYBDn8V43jY76Vg/AT-cm%7CZCAxVEFcYBDn8V43jY76Vg-preview-480x272.jpg" loading="lazy" decoding="async">
 <div class="absolute w-full h-full left-0 top-0 clips-gradient"></div>
 <div class="absolute bottom-14 left-2 flex items-center">
@@ -85,12 +85,12 @@ Meowko
 </div>
 </div>
 </div>
-</button> BREAK3 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12" :class="{ 'xs-max:hidden': showMore &amp;&amp; 3 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=PowerfulTalentedWebYouWHY-rpsMjJLiTVY8ayw0', 'PowerfulTalentedWebYouWHY-rpsMjJLiTVY8ayw0'); window.history.pushState('', '', clipHistoryQuery('add', 'PowerfulTalentedWebYouWHY-rpsMjJLiTVY8ayw0'))" wire:key="'3'+'1658821481'">
+</button> BREAK3 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12" :class="{ 'xs-max:hidden': showMore &amp;&amp; 3 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=PowerfulTalentedWebYouWHY-rpsMjJLiTVY8ayw0', 'PowerfulTalentedWebYouWHY-rpsMjJLiTVY8ayw0'); window.history.pushState('', '', clipHistoryQuery('add', 'PowerfulTalentedWebYouWHY-rpsMjJLiTVY8ayw0'))" wire:key="'3'+'1658823416'">
 <img class="crossorigin-img rounded-lg relative transform transition duration-500 clip-image w-full h-full object-cover" width="216" height="122.41" alt="creeper" src="https://clips-media-assets2.twitch.tv/Y0-HRK6bDIyS4k1WPGssNA/AT-cm%7CY0-HRK6bDIyS4k1WPGssNA-preview-480x272.jpg" loading="lazy" decoding="async">
 <div class="absolute w-full h-full left-0 top-0 clips-gradient"></div>
 <div class="absolute bottom-14 left-2 flex items-center">
 <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/90ccc5ed-916e-444d-9eb9-cfe09ba6dd7e-profile_image-28x28.png" class="w-7 h-7 rounded-full mr-4" width="28" height="28" decoding="async" loading="lazy">
-<div class="font-bold text-sm truncate text-default">
+ <div class="font-bold text-sm truncate text-default">
 Canniny
 </div>
 </div>
@@ -114,7 +114,7 @@ Canniny
 </div>
 </div>
 </div>
-</button> BREAK4 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 4 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=FancyCharmingButterKappaClaus-h5TeY0svBxweto2P', 'FancyCharmingButterKappaClaus-h5TeY0svBxweto2P'); window.history.pushState('', '', clipHistoryQuery('add', 'FancyCharmingButterKappaClaus-h5TeY0svBxweto2P'))" wire:key="'4'+'1658821481'">
+</button> BREAK4 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 4 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=FancyCharmingButterKappaClaus-h5TeY0svBxweto2P', 'FancyCharmingButterKappaClaus-h5TeY0svBxweto2P'); window.history.pushState('', '', clipHistoryQuery('add', 'FancyCharmingButterKappaClaus-h5TeY0svBxweto2P'))" wire:key="'4'+'1658823416'">
 <img class="crossorigin-img rounded-lg relative transform transition duration-500 clip-image w-full h-full object-cover" width="216" height="122.41" alt="so boring " src="https://clips-media-assets2.twitch.tv/2k0gHoeU3mNLLwccHraNjw/AT-cm%7C2k0gHoeU3mNLLwccHraNjw-preview-480x272.jpg" loading="lazy" decoding="async">
 <div class="absolute w-full h-full left-0 top-0 clips-gradient"></div>
 <div class="absolute bottom-14 left-2 flex items-center">
@@ -143,7 +143,7 @@ HasanAbi
 </div>
 </div>
 </div>
-</button> BREAK5 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 5 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=ScaryDeafFiddleheadsFutureMan-p9LnFeO0yb9d9FZ_', 'ScaryDeafFiddleheadsFutureMan-p9LnFeO0yb9d9FZ_'); window.history.pushState('', '', clipHistoryQuery('add', 'ScaryDeafFiddleheadsFutureMan-p9LnFeO0yb9d9FZ_'))" wire:key="'5'+'1658821481'">
+</button> BREAK5 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 5 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=ScaryDeafFiddleheadsFutureMan-p9LnFeO0yb9d9FZ_', 'ScaryDeafFiddleheadsFutureMan-p9LnFeO0yb9d9FZ_'); window.history.pushState('', '', clipHistoryQuery('add', 'ScaryDeafFiddleheadsFutureMan-p9LnFeO0yb9d9FZ_'))" wire:key="'5'+'1658823416'">
 <img class="crossorigin-img rounded-lg relative transform transition duration-500 clip-image w-full h-full object-cover" width="216" height="122.41" alt="ACAB" src="https://clips-media-assets2.twitch.tv/p46itqfS5xXjtMm_XfRWfw/AT-cm%7Cp46itqfS5xXjtMm_XfRWfw-preview-480x272.jpg" loading="lazy" decoding="async">
 <div class="absolute w-full h-full left-0 top-0 clips-gradient"></div>
 <div class="absolute bottom-14 left-2 flex items-center">
@@ -172,7 +172,7 @@ xQc
 </div>
 </div>
 </div>
-</button> BREAK6 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 6 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=WiseHealthyRadicchioKevinTurtle-ZHug8FMp0NANbkND', 'WiseHealthyRadicchioKevinTurtle-ZHug8FMp0NANbkND'); window.history.pushState('', '', clipHistoryQuery('add', 'WiseHealthyRadicchioKevinTurtle-ZHug8FMp0NANbkND'))" wire:key="'6'+'1658821481'">
+</button> BREAK6 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 6 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=WiseHealthyRadicchioKevinTurtle-ZHug8FMp0NANbkND', 'WiseHealthyRadicchioKevinTurtle-ZHug8FMp0NANbkND'); window.history.pushState('', '', clipHistoryQuery('add', 'WiseHealthyRadicchioKevinTurtle-ZHug8FMp0NANbkND'))" wire:key="'6'+'1658823416'">
 <img class="crossorigin-img rounded-lg relative transform transition duration-500 clip-image w-full h-full object-cover" width="216" height="122.41" alt="Joey Confronts Cowardly Racist in France" src="https://clips-media-assets2.twitch.tv/api_9WR7oPBTKdDQDW5DQw/AT-cm%7Capi_9WR7oPBTKdDQDW5DQw-preview-480x272.jpg" loading="lazy" decoding="async">
 <div class="absolute w-full h-full left-0 top-0 clips-gradient"></div>
 <div class="absolute bottom-14 left-2 flex items-center">
@@ -190,7 +190,7 @@ JOEYKAOTYK
 </svg> <span class="font-bold">237 071</span>
 </div>
 <div class="rounded-full bg-body bg-opacity-75 px-2 h-5 flex items-center">
-<span class="font-bold">0:51</span>
+ <span class="font-bold">0:51</span>
 </div>
 </div>
 <div class="flex items-center space-x-3">
@@ -201,7 +201,7 @@ JOEYKAOTYK
 </div>
 </div>
 </div>
-</button> BREAK7 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 7 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=OptimisticBadYakinikuCoolStoryBro-75Q5LLCnPJzo7hiB', 'OptimisticBadYakinikuCoolStoryBro-75Q5LLCnPJzo7hiB'); window.history.pushState('', '', clipHistoryQuery('add', 'OptimisticBadYakinikuCoolStoryBro-75Q5LLCnPJzo7hiB'))" wire:key="'7'+'1658821481'">
+</button> BREAK7 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 7 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=OptimisticBadYakinikuCoolStoryBro-75Q5LLCnPJzo7hiB', 'OptimisticBadYakinikuCoolStoryBro-75Q5LLCnPJzo7hiB'); window.history.pushState('', '', clipHistoryQuery('add', 'OptimisticBadYakinikuCoolStoryBro-75Q5LLCnPJzo7hiB'))" wire:key="'7'+'1658823416'">
 <img class="crossorigin-img rounded-lg relative transform transition duration-500 clip-image w-full h-full object-cover" width="216" height="122.41" alt="Post Malone Backflip Attempt" src="https://clips-media-assets2.twitch.tv/4X8IYO-UOSywpzyc6O4YgQ/AT-cm%7C4X8IYO-UOSywpzyc6O4YgQ-preview-480x272.jpg" loading="lazy" decoding="async">
 <div class="absolute w-full h-full left-0 top-0 clips-gradient"></div>
 <div class="absolute bottom-14 left-2 flex items-center">
@@ -230,7 +230,7 @@ PostMalone
 </div>
 </div>
 </div>
-</button> BREAK8 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 8 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=TardyAnimatedKuduPanicBasket-IMQPTMNlbuWjBMgA', 'TardyAnimatedKuduPanicBasket-IMQPTMNlbuWjBMgA'); window.history.pushState('', '', clipHistoryQuery('add', 'TardyAnimatedKuduPanicBasket-IMQPTMNlbuWjBMgA'))" wire:key="'8'+'1658821481'">
+</button> BREAK8 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 8 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=TardyAnimatedKuduPanicBasket-IMQPTMNlbuWjBMgA', 'TardyAnimatedKuduPanicBasket-IMQPTMNlbuWjBMgA'); window.history.pushState('', '', clipHistoryQuery('add', 'TardyAnimatedKuduPanicBasket-IMQPTMNlbuWjBMgA'))" wire:key="'8'+'1658823416'">
 <img class="crossorigin-img rounded-lg relative transform transition duration-500 clip-image w-full h-full object-cover" width="216" height="122.41" alt="LMAOOOOOOOOOOOOO" src="https://clips-media-assets2.twitch.tv/V_JAhyDED0zDZW7lowTIAA/AT-cm%7CV_JAhyDED0zDZW7lowTIAA-preview-480x272.jpg" loading="lazy" decoding="async">
 <div class="absolute w-full h-full left-0 top-0 clips-gradient"></div>
 <div class="absolute bottom-14 left-2 flex items-center">
@@ -259,7 +259,7 @@ Im_Dontai
 </div>
 </div>
 </div>
-</button> BREAK9 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 9 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=LovelyTangibleBorkM4xHeh-8gw5e5kuLtmD-ldX', 'LovelyTangibleBorkM4xHeh-8gw5e5kuLtmD-ldX'); window.history.pushState('', '', clipHistoryQuery('add', 'LovelyTangibleBorkM4xHeh-8gw5e5kuLtmD-ldX'))" wire:key="'9'+'1658821481'">
+</button> BREAK9 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 9 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=LovelyTangibleBorkM4xHeh-8gw5e5kuLtmD-ldX', 'LovelyTangibleBorkM4xHeh-8gw5e5kuLtmD-ldX'); window.history.pushState('', '', clipHistoryQuery('add', 'LovelyTangibleBorkM4xHeh-8gw5e5kuLtmD-ldX'))" wire:key="'9'+'1658823416'">
 <img class="crossorigin-img rounded-lg relative transform transition duration-500 clip-image w-full h-full object-cover" width="216" height="122.41" alt="SODA" src="https://clips-media-assets2.twitch.tv/iRyJnPIMOXuZLi7Zg_pXVw/46844950957-offset-7752-preview-480x272.jpg" loading="lazy" decoding="async">
 <div class="absolute w-full h-full left-0 top-0 clips-gradient"></div>
 <div class="absolute bottom-14 left-2 flex items-center">
@@ -288,7 +288,7 @@ Mizkif
 </div>
 </div>
 </div>
-</button> BREAK10 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 10 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=SpicyDelightfulShallotDoubleRainbow-3oFwTjP6pHjcfz44', 'SpicyDelightfulShallotDoubleRainbow-3oFwTjP6pHjcfz44'); window.history.pushState('', '', clipHistoryQuery('add', 'SpicyDelightfulShallotDoubleRainbow-3oFwTjP6pHjcfz44'))" wire:key="'10'+'1658821481'">
+</button> BREAK10 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 10 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=SpicyDelightfulShallotDoubleRainbow-3oFwTjP6pHjcfz44', 'SpicyDelightfulShallotDoubleRainbow-3oFwTjP6pHjcfz44'); window.history.pushState('', '', clipHistoryQuery('add', 'SpicyDelightfulShallotDoubleRainbow-3oFwTjP6pHjcfz44'))" wire:key="'10'+'1658823416'">
 <img class="crossorigin-img rounded-lg relative transform transition duration-500 clip-image w-full h-full object-cover" width="216" height="122.41" alt="clear soda" src="https://clips-media-assets2.twitch.tv/YWqeuN6BcE4z-qR43H8-OA/AT-cm%7CYWqeuN6BcE4z-qR43H8-OA-preview-480x272.jpg" loading="lazy" decoding="async">
 <div class="absolute w-full h-full left-0 top-0 clips-gradient"></div>
 <div class="absolute bottom-14 left-2 flex items-center">
@@ -310,20 +310,20 @@ sodapoppin
 </div>
 </div>
 <div class="flex items-center space-x-3">
- <img src="https://static-cdn.jtvnw.net/ttv-boxart/509658-40x56.jpg" alt="Just Chatting" decoding="async" loading="lazy" height="36" width="26" class="game_pic--md">
+<img src="https://static-cdn.jtvnw.net/ttv-boxart/509658-40x56.jpg" alt="Just Chatting" decoding="async" loading="lazy" height="36" width="26" class="game_pic--md">
 <div class="space-y-0.5 overflow-hidden">
 <div class="font-bold text-sm truncate text-white" title="clear soda">clear soda</div>
 <div class="text-xs text-secondary">22 Jul, 20:23</div>
 </div>
 </div>
 </div>
-</button> BREAK11 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 11 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=StrangeDeafMallardSoBayed-Who-dbKBgYc5dSwr', 'StrangeDeafMallardSoBayed-Who-dbKBgYc5dSwr'); window.history.pushState('', '', clipHistoryQuery('add', 'StrangeDeafMallardSoBayed-Who-dbKBgYc5dSwr'))" wire:key="'11'+'1658821481'">
+</button> BREAK11 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 11 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=StrangeDeafMallardSoBayed-Who-dbKBgYc5dSwr', 'StrangeDeafMallardSoBayed-Who-dbKBgYc5dSwr'); window.history.pushState('', '', clipHistoryQuery('add', 'StrangeDeafMallardSoBayed-Who-dbKBgYc5dSwr'))" wire:key="'11'+'1658823416'">
 <img class="crossorigin-img rounded-lg relative transform transition duration-500 clip-image w-full h-full object-cover" width="216" height="122.41" alt="ah oh" src="https://clips-media-assets2.twitch.tv/tpHj8VoaPnWygYGHOXUsKw/41020348379-offset-11196-preview-480x272.jpg" loading="lazy" decoding="async">
 <div class="absolute w-full h-full left-0 top-0 clips-gradient"></div>
 <div class="absolute bottom-14 left-2 flex items-center">
 <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/e4a1ff1f-9685-430e-835a-477c4487e7e5-profile_image-28x28.png" class="w-7 h-7 rounded-full mr-4" width="28" height="28" decoding="async" loading="lazy">
 <div class="font-bold text-sm truncate text-default">
-JOEYKAOTYK
+ JOEYKAOTYK
 </div>
 </div>
 <div class="absolute flex flex-col justify-between left-0 top-0 p-2 w-full h-full">
@@ -346,7 +346,7 @@ JOEYKAOTYK
 </div>
 </div>
 </div>
-</button> BREAK12 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 12 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=WimpyEagerMuleKevinTurtle-F770ET1ZAq_K2fTG', 'WimpyEagerMuleKevinTurtle-F770ET1ZAq_K2fTG'); window.history.pushState('', '', clipHistoryQuery('add', 'WimpyEagerMuleKevinTurtle-F770ET1ZAq_K2fTG'))" wire:key="'12'+'1658821481'">
+</button> BREAK12 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 12 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=WimpyEagerMuleKevinTurtle-F770ET1ZAq_K2fTG', 'WimpyEagerMuleKevinTurtle-F770ET1ZAq_K2fTG'); window.history.pushState('', '', clipHistoryQuery('add', 'WimpyEagerMuleKevinTurtle-F770ET1ZAq_K2fTG'))" wire:key="'12'+'1658823416'">
 <img class="crossorigin-img rounded-lg relative transform transition duration-500 clip-image w-full h-full object-cover" width="216" height="122.41" alt="Rolled" src="https://clips-media-assets2.twitch.tv/qJkBoBe-9BE9WQKvytn0xg/AT-cm%7CqJkBoBe-9BE9WQKvytn0xg-preview-480x272.jpg" loading="lazy" decoding="async">
 <div class="absolute w-full h-full left-0 top-0 clips-gradient"></div>
 <div class="absolute bottom-14 left-2 flex items-center">
@@ -375,7 +375,7 @@ xQc
 </div>
 </div>
 </div>
-</button> BREAK13 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 13 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=KathishBusyHareVoHiYo-XrdnUcCm95UQZNbM', 'KathishBusyHareVoHiYo-XrdnUcCm95UQZNbM'); window.history.pushState('', '', clipHistoryQuery('add', 'KathishBusyHareVoHiYo-XrdnUcCm95UQZNbM'))" wire:key="'13'+'1658821481'">
+</button> BREAK13 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 13 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=KathishBusyHareVoHiYo-XrdnUcCm95UQZNbM', 'KathishBusyHareVoHiYo-XrdnUcCm95UQZNbM'); window.history.pushState('', '', clipHistoryQuery('add', 'KathishBusyHareVoHiYo-XrdnUcCm95UQZNbM'))" wire:key="'13'+'1658823416'">
 <img class="crossorigin-img rounded-lg relative transform transition duration-500 clip-image w-full h-full object-cover" width="216" height="122.41" alt="Partnered streamer casual transphobia" src="https://clips-media-assets2.twitch.tv/09D6X163Z1HApveVEGTWzA/AT-cm%7C09D6X163Z1HApveVEGTWzA-preview-480x272.jpg" loading="lazy" decoding="async">
 <div class="absolute w-full h-full left-0 top-0 clips-gradient"></div>
 <div class="absolute bottom-14 left-2 flex items-center">
@@ -404,7 +404,7 @@ HasanAbi
 </div>
 </div>
 </div>
-</button> BREAK14 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 14 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=BenevolentGoldenRatDogFace-ijyI3ws1nhNxq6Cp', 'BenevolentGoldenRatDogFace-ijyI3ws1nhNxq6Cp'); window.history.pushState('', '', clipHistoryQuery('add', 'BenevolentGoldenRatDogFace-ijyI3ws1nhNxq6Cp'))" wire:key="'14'+'1658821481'">
+</button> BREAK14 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 14 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=BenevolentGoldenRatDogFace-ijyI3ws1nhNxq6Cp', 'BenevolentGoldenRatDogFace-ijyI3ws1nhNxq6Cp'); window.history.pushState('', '', clipHistoryQuery('add', 'BenevolentGoldenRatDogFace-ijyI3ws1nhNxq6Cp'))" wire:key="'14'+'1658823416'">
 <img class="crossorigin-img rounded-lg relative transform transition duration-500 clip-image w-full h-full object-cover" width="216" height="122.41" alt="Satanic" src="https://clips-media-assets2.twitch.tv/rJ-B6Io8iN8LNZ4TcaugqQ/AT-cm%7CrJ-B6Io8iN8LNZ4TcaugqQ-preview-480x272.jpg" loading="lazy" decoding="async">
 <div class="absolute w-full h-full left-0 top-0 clips-gradient"></div>
 <div class="absolute bottom-14 left-2 flex items-center">
@@ -424,7 +424,7 @@ CristinaMafia
 <div class="rounded-full bg-body bg-opacity-75 px-2 h-5 flex items-center">
 <span class="font-bold">0:23</span>
 </div>
-</div>
+ </div>
 <div class="flex items-center space-x-3">
 <img src="https://static-cdn.jtvnw.net/ttv-boxart/509658-40x56.jpg" alt="Just Chatting" decoding="async" loading="lazy" height="36" width="26" class="game_pic--md">
 <div class="space-y-0.5 overflow-hidden">
@@ -433,7 +433,7 @@ CristinaMafia
 </div>
 </div>
 </div>
-</button> BREAK15 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 15 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=HedonisticWittyBaboonKeyboardCat-twQ06Om7noSQ4FHC', 'HedonisticWittyBaboonKeyboardCat-twQ06Om7noSQ4FHC'); window.history.pushState('', '', clipHistoryQuery('add', 'HedonisticWittyBaboonKeyboardCat-twQ06Om7noSQ4FHC'))" wire:key="'15'+'1658821481'">
+</button> BREAK15 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 15 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=HedonisticWittyBaboonKeyboardCat-twQ06Om7noSQ4FHC', 'HedonisticWittyBaboonKeyboardCat-twQ06Om7noSQ4FHC'); window.history.pushState('', '', clipHistoryQuery('add', 'HedonisticWittyBaboonKeyboardCat-twQ06Om7noSQ4FHC'))" wire:key="'15'+'1658823416'">
 <img class="crossorigin-img rounded-lg relative transform transition duration-500 clip-image w-full h-full object-cover" width="216" height="122.41" alt="Meowko has a creep hovering around her at the beach staring" src="https://clips-media-assets2.twitch.tv/X5lg3LcENOjpu56EkOBRwg/AT-cm%7CX5lg3LcENOjpu56EkOBRwg-preview-480x272.jpg" loading="lazy" decoding="async">
 <div class="absolute w-full h-full left-0 top-0 clips-gradient"></div>
 <div class="absolute bottom-14 left-2 flex items-center">
@@ -462,7 +462,7 @@ Meowko
 </div>
 </div>
 </div>
-</button> BREAK16 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 16 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=SmokyPeacefulWerewolfFUNgineer-1dbO7YWYU3u1ha2u', 'SmokyPeacefulWerewolfFUNgineer-1dbO7YWYU3u1ha2u'); window.history.pushState('', '', clipHistoryQuery('add', 'SmokyPeacefulWerewolfFUNgineer-1dbO7YWYU3u1ha2u'))" wire:key="'16'+'1658821481'">
+</button> BREAK16 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 16 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=SmokyPeacefulWerewolfFUNgineer-1dbO7YWYU3u1ha2u', 'SmokyPeacefulWerewolfFUNgineer-1dbO7YWYU3u1ha2u'); window.history.pushState('', '', clipHistoryQuery('add', 'SmokyPeacefulWerewolfFUNgineer-1dbO7YWYU3u1ha2u'))" wire:key="'16'+'1658823416'">
 <img class="crossorigin-img rounded-lg relative transform transition duration-500 clip-image w-full h-full object-cover" width="216" height="122.41" alt="Adept oh no no" src="https://clips-media-assets2.twitch.tv/qvg2oNXWzu2FmFN7tYWtrg/AT-cm%7Cqvg2oNXWzu2FmFN7tYWtrg-preview-480x272.jpg" loading="lazy" decoding="async">
 <div class="absolute w-full h-full left-0 top-0 clips-gradient"></div>
 <div class="absolute bottom-14 left-2 flex items-center">
@@ -491,7 +491,7 @@ xQc
 </div>
 </div>
 </div>
-</button> BREAK17 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 17 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=EnchantingBombasticNeanderthalPeteZarollTie-QQ22480zOTgvTmDh', 'EnchantingBombasticNeanderthalPeteZarollTie-QQ22480zOTgvTmDh'); window.history.pushState('', '', clipHistoryQuery('add', 'EnchantingBombasticNeanderthalPeteZarollTie-QQ22480zOTgvTmDh'))" wire:key="'17'+'1658821481'">
+</button> BREAK17 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 17 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=EnchantingBombasticNeanderthalPeteZarollTie-QQ22480zOTgvTmDh', 'EnchantingBombasticNeanderthalPeteZarollTie-QQ22480zOTgvTmDh'); window.history.pushState('', '', clipHistoryQuery('add', 'EnchantingBombasticNeanderthalPeteZarollTie-QQ22480zOTgvTmDh'))" wire:key="'17'+'1658823416'">
 <img class="crossorigin-img rounded-lg relative transform transition duration-500 clip-image w-full h-full object-cover" width="216" height="122.41" alt="Did I got it? Turn volume to low " src="https://clips-media-assets2.twitch.tv/0KzAUUENtuPNMzk4L05g4Q/AT-cm%7C0KzAUUENtuPNMzk4L05g4Q-preview-480x272.jpg" loading="lazy" decoding="async">
 <div class="absolute w-full h-full left-0 top-0 clips-gradient"></div>
 <div class="absolute bottom-14 left-2 flex items-center">
@@ -520,7 +520,7 @@ Bingo1
 </div>
 </div>
 </div>
-</button> BREAK18 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 18 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=RealDullNigiriLitFam-kC-tAmMSuV8T7Pq7', 'RealDullNigiriLitFam-kC-tAmMSuV8T7Pq7'); window.history.pushState('', '', clipHistoryQuery('add', 'RealDullNigiriLitFam-kC-tAmMSuV8T7Pq7'))" wire:key="'18'+'1658821481'">
+</button> BREAK18 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 18 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=RealDullNigiriLitFam-kC-tAmMSuV8T7Pq7', 'RealDullNigiriLitFam-kC-tAmMSuV8T7Pq7'); window.history.pushState('', '', clipHistoryQuery('add', 'RealDullNigiriLitFam-kC-tAmMSuV8T7Pq7'))" wire:key="'18'+'1658823416'">
 <img class="crossorigin-img rounded-lg relative transform transition duration-500 clip-image w-full h-full object-cover" width="216" height="122.41" alt="Emiru's part time job " src="https://clips-media-assets2.twitch.tv/cOqUGZAvrQJjErlfE-z6uw/AT-cm%7CcOqUGZAvrQJjErlfE-z6uw-preview-480x272.jpg" loading="lazy" decoding="async">
 <div class="absolute w-full h-full left-0 top-0 clips-gradient"></div>
 <div class="absolute bottom-14 left-2 flex items-center">
@@ -540,7 +540,7 @@ Knut
 <div class="rounded-full bg-body bg-opacity-75 px-2 h-5 flex items-center">
 <span class="font-bold">0:08</span>
 </div>
- </div>
+</div>
 <div class="flex items-center space-x-3">
 <img src="https://static-cdn.jtvnw.net/ttv-boxart/509658-40x56.jpg" alt="Just Chatting" decoding="async" loading="lazy" height="36" width="26" class="game_pic--md">
 <div class="space-y-0.5 overflow-hidden">
@@ -549,7 +549,7 @@ Knut
 </div>
 </div>
 </div>
-</button> BREAK19 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 19 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=OpenWiseGazelleFutureMan-uEsSkYZ0zX2_grZI', 'OpenWiseGazelleFutureMan-uEsSkYZ0zX2_grZI'); window.history.pushState('', '', clipHistoryQuery('add', 'OpenWiseGazelleFutureMan-uEsSkYZ0zX2_grZI'))" wire:key="'19'+'1658821481'">
+</button> BREAK19 : <button class="w-full h-full col-span-3 relative rounded-lg clip-container overflow-hidden text-left focus:outline-none md-max:col-span-4 sm-max:col-span-6 xs-max:col-span-12 xs-max:hidden" :class="{ 'xs-max:hidden': showMore &amp;&amp; 19 > 3 }" x-on:click="$wire.emit('setInfoForPopup', 'https://clips.twitch.tv/embed?clip=OpenWiseGazelleFutureMan-uEsSkYZ0zX2_grZI', 'OpenWiseGazelleFutureMan-uEsSkYZ0zX2_grZI'); window.history.pushState('', '', clipHistoryQuery('add', 'OpenWiseGazelleFutureMan-uEsSkYZ0zX2_grZI'))" wire:key="'19'+'1658823416'">
 <img class="crossorigin-img rounded-lg relative transform transition duration-500 clip-image w-full h-full object-cover" width="216" height="122.41" alt="FeelsStrongMan" src="https://clips-media-assets2.twitch.tv/PSxItrhLEpGGdM19v4K2SA/AT-cm%7CPSxItrhLEpGGdM19v4K2SA-preview-480x272.jpg" loading="lazy" decoding="async">
 <div class="absolute w-full h-full left-0 top-0 clips-gradient"></div>
 <div class="absolute bottom-14 left-2 flex items-center">
@@ -575,7 +575,7 @@ Henlips1
 <div class="space-y-0.5 overflow-hidden">
 <div class="font-bold text-sm truncate text-white" title="FeelsStrongMan">FeelsStrongMan</div>
 <div class="text-xs text-secondary">20 Jul, 18:45</div>
- </div>
+</div>
 </div>
 </div>
 </button> BREAK
