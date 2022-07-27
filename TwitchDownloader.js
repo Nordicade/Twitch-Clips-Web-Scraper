@@ -57,12 +57,12 @@ function matchClipTitle(htmlBlock){
 
 console.log(" - - starting Twitch Downloader - -");
 const buffer = fs.readFileSync("./output/clipHTML.txt").toString();
-const clipHTML = buffer.split('BREAK');
+const clipHTML = buffer.split('\r\n');
 for(let i = 0; i < clipHTML.length - 1; i++){
   // const url = matchClipURL(clipHTML[i]);
   // const title = matchClipTitle(clipHTML[i]);
   // console.log(`${i} : ${url} - ${title}`);
-  const result = Constants.TWITCH_BASE + matchClip(clipHTML[i])
-  console.log(result);
+  // const result = Constants.TWITCH_BASE + matchClip(clipHTML[i])
+  console.log(clipHTML[i]);
 }
 console.log(" - - exiting Twitch Downloader - -");

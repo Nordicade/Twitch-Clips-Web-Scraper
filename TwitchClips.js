@@ -1,10 +1,12 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
+const { exit } = require('process');
 
 const Constants = {
   DOWNLOAD_LINK_REGEX: /(https:\/\/clips\.twitch\.tv\/embed\?clip=)(.*?)(')/gm,
   TITLE_REGEX: /(alt=")(.*?)(")/gm,
   TWITCH_DOMAIN: 'https://clips.twitch.tv/embed?clip=',
+  TWITCH_BASE: 'https://clips.twitch.tv/',
   STREAMS_CHARTS_URL: 'https://streamscharts.com/clips',
   DOWNLOAD_CLIP_URL: 'https://streamscharts.com/clips/downloader',
 }
@@ -21,6 +23,26 @@ class Clip {
     // BEHOLD 
     // $x("//button[contains(x-show, *)]")
     // $x("//button[contains(@class, 'clip-container')]")
+
+function matchClip(htmlBlock){
+  let starting = 0;
+  let ending = 0;
+
+  if (htmlBlock.indexOf(Constants.TWITCH_DOMAIN) > 0){
+    starting = htmlBlock.indexOf(Constants.TWITCH_DOMAIN) + Constants.TWITCH_DOMAIN.length;
+  }
+  else {
+    console.log('failed to find twitch clip');
+  }
+  let newHtmlBlock = htmlBlock.substring(starting, htmlBlock.length);
+  if (newHtmlBlock.indexOf('\'') > 0){
+    ending = newHtmlBlock.indexOf('\'');
+  }
+  else {
+    console.log('failed to find twitch clip');
+  }
+  return substring = newHtmlBlock.substring(0 ,ending);
+}
 
 function matchClipURLV1(htmlBlock){
   let matchedClipURL = Constants.DOWNLOAD_LINK_REGEX.exec(htmlBlock);
@@ -81,8 +103,9 @@ console.log("- - Starting TwitchClips.ts - -");
 htmlClips = await simpleRetrieveClipsFromPage(Constants.STREAMS_CHARTS_URL);
 
 let content = '';
+
 for (let i = 0; i < htmlClips.length; i++){
-  content += `${i} : ${htmlClips[i]} BREAK`;
+  content += Constants.TWITCH_BASE + matchClip(htmlClips[i]) + '\r\n';
 };
 
 try {
