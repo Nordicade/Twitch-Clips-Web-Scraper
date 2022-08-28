@@ -1,4 +1,7 @@
 const fs = require("fs");
+const { exit } = require("process");
+const puppeteer = require('puppeteer');
+const { PassThrough } = require("stream");
 
 const Constants = {
   DOWNLOAD_LINK_REGEX: /(https:\/\/clips\.twitch\.tv\/embed\?clip=)(.*?)(')/gm,
@@ -7,62 +10,73 @@ const Constants = {
   TWITCH_BASE: 'https://clips.twitch.tv/',
   STREAMS_CHARTS_URL: 'https://streamscharts.com/clips',
   DOWNLOAD_CLIP_URL: 'https://streamscharts.com/clips/downloader',
+  EXPECTED_URL: 'https://clips-media-assets2.twitch.tv/ '
 }
 
-function matchTwitchDomain(htmlBlock){
-  return htmlBlock.indexOf(Constants.TWITCH_DOMAIN) > 0;
+async function killPuppeteer(browser){
+  await browser.close();
 }
 
-function matchClip(htmlBlock){
-  let starting = 0;
-  let ending = 0;
 
-  if (htmlBlock.indexOf(Constants.TWITCH_DOMAIN) > 0){
-    starting = htmlBlock.indexOf(Constants.TWITCH_DOMAIN) + Constants.TWITCH_DOMAIN.length;
-  }
-  else {
-    console.log('reee');
-  }
-  let newHtmlBlock = htmlBlock.substring(starting, htmlBlock.length);
-  if (newHtmlBlock.indexOf('\'') > 0){
-    ending = newHtmlBlock.indexOf('\'');
-  }
-  else {
-    console.log('reee 2 ');
-  }
-  return substring = newHtmlBlock.substring(0 ,ending);
-}
+(async () => {
+  console.log(" - - starting Twitch Downloader - -");
+  const buffer = fs.readFileSync("./output/clipHTML.txt").toString();
+  const clipHTML = buffer.split('\r\n');
+  const browser = await puppeteer.launch( {headless : false });
+  const page = await browser.newPage();
+  await page.goto(Constants.DOWNLOAD_CLIP_URL);
+  let outputList = [];
+  for(let i = 0; i < clipHTML.length - 1; i++){
+    const page = await browser.newPage();
+    await page.setViewport({width: 1366, height: 768})
+    await page.goto(Constants.DOWNLOAD_CLIP_URL, { waitUntil: 'networkidle2' });
+    console.log(clipHTML[i]);
+    console.log(`This is where ${clipHTML[i]} starts`);
+    await page.waitForSelector('input[name=clip-downloader]', {visible: true});
+    await page.$eval('input[name=clip-downloader]', (el, clipHTML) => el.value = clipHTML, clipHTML[i]);
+    let button1 = await page.$x("//button[contains(@aria-label, 'Download')]");
+    await page.waitForSelector("button[aria-label=Download]", {visible: true});
+    await page.click('button[aria-label="Download"]')
 
-function matchClipURL(htmlBlock){
-  let matchedClipURL = Constants.DOWNLOAD_LINK_REGEX.exec(htmlBlock);
-  if (matchedClipURL == null) {
-    console.log(`Failed clipping the URL for: ${htmlBlock}`)
-    throw new Error("Error - The clip url regex failed to extract");
-  }
-  else {
-    return matchedClipURL[2];
-  }
-}
 
-function matchClipTitle(htmlBlock){
-  let matchedClipTitle = Constants.TITLE_REGEX.exec(htmlBlock);
-  if (matchedClipTitle == null) {
-    console.log(`Failed clipping the Title for : ${htmlBlock}`)
-    throw new Error("Error - The title url regex failed to extract");
-  }
-  else {
-    return matchedClipTitle[2];
-  }
-}
+    // NEED TO FIND A BETTER SELCECTOR FOR THE DOWNLOAD BUTTON
+    // THAT WAY WE CAN WATIFORSELECTOR TO ENSURE IT EXISTS BEFORE PRESSING
+    // const href = await page.$x("//a[contains(., 'Download .MP4, 1080p')]");
+    try {
+      await page.waitForXPath('/html/body/main/div[3]/div/div[1]/div/div[2]/div[5]/div/a', {visible:true});
+    }
+    catch {
+      try {
+        fs.writeFileSync('/Users/Nick/Development/Projects/Twitch-Clips-Web-Scraper/output/clipURL.txt', outputList);
+      }
+      catch(err){
+        exit(1);
+      }
+    }
+    // const link = await page.$eval('/html/body/main/div[3]/div/div[1]/div/div[2]/div[5]/div/a')[0];
 
-console.log(" - - starting Twitch Downloader - -");
-const buffer = fs.readFileSync("./output/clipHTML.txt").toString();
-const clipHTML = buffer.split('\r\n');
-for(let i = 0; i < clipHTML.length - 1; i++){
-  // const url = matchClipURL(clipHTML[i]);
-  // const title = matchClipTitle(clipHTML[i]);
-  // console.log(`${i} : ${url} - ${title}`);
-  // const result = Constants.TWITCH_BASE + matchClip(clipHTML[i])
-  console.log(clipHTML[i]);
-}
-console.log(" - - exiting Twitch Downloader - -");
+    // await page.waitForSelector("a[contains(.=Download .MP4, 1080p)]", {visible: true});
+    const href = await page.$x("//a[contains(., 'Download .MP4')]");
+    if (href.length == 0){
+      continue;
+    }
+    const output = await page.evaluate(el => { return el.href}, href[0]);
+    console.log(output);
+    await new Promise(r => setTimeout(r, 1000));
+    outputList.push(output);
+  }
+  await killPuppeteer(browser);
+  try {
+    let outputText = ''
+    for (let i = 0; i < outputList.length; i++) {
+      outputText = outputText + outputList[i].toString() + '\r\n';
+    }
+    fs.writeFileSync('/Users/Nick/Development/Projects/Twitch-Clips-Web-Scraper/output/clipURL.txt', outputText);
+  }
+  catch(err){
+    console.log(err)
+    console.log("An error occurred writing the html clip data")
+  }
+  
+  console.log(" - - exiting Twitch Downloader - -");
+})();

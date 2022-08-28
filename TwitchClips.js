@@ -1,6 +1,5 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
-const { exit } = require('process');
 
 const Constants = {
   DOWNLOAD_LINK_REGEX: /(https:\/\/clips\.twitch\.tv\/embed\?clip=)(.*?)(')/gm,
@@ -42,30 +41,6 @@ function matchClip(htmlBlock){
     console.log('failed to find twitch clip');
   }
   return substring = newHtmlBlock.substring(0 ,ending);
-}
-
-function matchClipURLV1(htmlBlock){
-  let matchedClipURL = Constants.DOWNLOAD_LINK_REGEX.exec(htmlBlock);
-  if (matchedClipURL == null) {
-    console.log(`Failed clipping the URL for: ${htmlBlock}`)
-    throw new Error("Error - The clip url regex failed to extract");
-  }
-  else {
-    return matchedClipURL[2];
-    // console.log(`Successfully stored ${clipURL}`)
-  }
-}
-
-function matchClipTitle(htmlBlock){
-  let matchedClipTitle = Constants.TITLE_REGEX.exec(htmlBlock);
-  if (matchedClipTitle == null) {
-    console.log(`Failed clipping the Title for : ${htmlBlock}`)
-    throw new Error("Error - The title url regex failed to extract");
-  }
-  else {
-    return matchedClipTitle[2];
-    // console.log(`Successfully stored ${clipTitle}`)
-  }
 }
 
 // This method is sure to change in the future.
@@ -115,6 +90,5 @@ catch(err){
   console.log("An error occurred writing the html clip data")
 }
 
-// downloadClips(clips);
 console.log("- - Finishing TwitchClips.ts - -");
 })();
