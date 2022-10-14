@@ -1,7 +1,6 @@
 const fs = require("fs");
 const { exit } = require("process");
 const puppeteer = require('puppeteer');
-const { PassThrough } = require("stream");
 
 const Constants = {
   DOWNLOAD_LINK_REGEX: /(https:\/\/clips\.twitch\.tv\/embed\?clip=)(.*?)(')/gm,
